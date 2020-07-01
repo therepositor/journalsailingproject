@@ -1,0 +1,502 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-family: "portrait", serif;
+}
+.header {
+  background-image: url(rock_on_water.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+.options {
+  display: none;
+}
+.socials {
+  display: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 168.75px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.body {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  width: max-content;
+  height: calc(100% - 168.75px);
+  font-size: 40px;
+  text-justify: center;
+  margin-top: 168.75px;
+}
+.body a {
+  color: white;
+}
+.nav_text a {
+  text-decoration: none;
+}
+h6 {
+  margin: 15px;
+  font-size: 12px;
+  text-align: center;
+  justify-self: center;
+}
+h1 {
+  margin: 15px;
+  font-size: 30px;
+  text-align: center;
+  justify-self: center;
+}
+.body_link {
+  margin: 15px;
+  font-size: 12px;
+  text-align: center;
+  justify-self: center;
+}
+.nav_text a {
+  color: white;
+}
+.features_content {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px;
+}
+.features_content_left {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+}
+.features_content_right {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+.girl_on_boat {
+  height: 85vh;
+  width: 70vw;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.link1 {
+  margin-top: 5px;
+}
+.subject {
+  text-decoration: underline;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+}
+.title {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: black;
+  padding: 5px;
+}
+.photographer {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 100;
+  color: black;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+}
+.features_features {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  width: calc (100% - 70px);
+  text-align: center;
+  margin: 35px;
+}
+.pea_bowl {
+  height: 37.5vh;
+}
+.boats_portrait {
+  height: 37.5vh;
+}
+.travel_content {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+}
+.travel_content_up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.travel_content_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.travels {
+  background-color: whitesmoke;
+  margin: 40px 0px;
+}
+.girl_on_boat2img {
+  height: 65vh;
+  width: 45vw;
+  padding: 15px;
+}
+.speed_controlimg {
+  height: 65vh;
+  width: 45vw;
+  padding: 15px;
+}
+.travel_travel {
+  width: 100%;
+  height: 20px;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+.wineshop_image {
+  height: 50vh;
+  width: 30vw;
+  padding: 15px;
+}
+.fishmarket_image {
+  height: 50vh;
+  width: 30vw;
+  padding: 15px;
+}
+.girlcanvas_image {
+  height: 50vh;
+  width: 30vw;
+  padding: 15px;
+}
+.view_more {
+  text-align: center;
+  display: flex;
+  border: 1px solid black;
+  padding: 14px;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 200px;
+  justify-content: center;
+  height: 50px;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 35px;
+}
+.wrapper {
+  height: 33vh;
+  width: 100vw;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.croatiaimage {
+  height: 30vh;
+  width: 33vw;
+  padding: 5px;
+}
+.surfacewaterimage {
+  height: 30vh;
+  width: 33vw;
+  padding: 5px;
+}
+.sirdiniaimage {
+  height: 30vh;
+  width: 33vw;
+  padding: 5px;
+}
+.coffeebarimage {
+  height: 30vh;
+  width: 33vw;
+  padding: 5px;
+}
+.girl_underwaterimage {
+  height: 30vh;
+  width: 33vw;
+  padding: 5px;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+}
+.text_photoessays {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin: 35px;
+}
+.footer {
+  background-image: url(rainbow_on_sea.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+.footer_logo {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+.socials_footer {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.footer_text {
+  margin-top: 50px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer_text h1 {
+  font-size: 60px;
+}
+.footer_text p {
+  font-size: 25px;
+}
+.footer_view_more {
+  text-align: center;
+  display: flex;
+  border: 1px solid black;
+  padding: 14px;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 200px;
+  justify-content: center;
+  height: 50px;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+@media only screen and (max-width: 450px) {
+  .nav_text {
+    display: none;
+  }
+  .body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .features_content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100vw;
+    justify-content: center;
+  }
+  .features_content_left {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: center;
+  }
+  .features_content_right {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: center;
+  }
+  .girl_on_boat {
+    height: 60vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .pea_bowl {
+    height: 37.5vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .boats_portrait {
+    height: 37.5vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .travel_content_up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .travel_content_down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .girl_on_boat2img {
+    height: 55vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .speed_controlimg {
+    height: 55vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .wineshop_image {
+    height: 55vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .fishmarket_image {
+    height: 55vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .girlcanvas_image {
+    height: 55vh;
+    width: 90vw;
+    padding: 15px;
+  }
+  .croatiaimage {
+    height: 55vh;
+    width: 90vw;
+    padding: 5px;
+  }
+  .surfacewaterimage {
+    height: 55vh;
+    width: 90vw;
+    padding: 5px;
+  }
+  .sirdiniaimage {
+    height: 55vh;
+    width: 90vw;
+    padding: 5px;
+  }
+  .coffeebarimage {
+    height: 55vh;
+    width: 90vw;
+    padding: 5px;
+  }
+  .girl_underwaterimage {
+    height: 55vh;
+    width: 90vw;
+    padding: 5px;
+  }
+  .wrapper {
+    height: auto;
+    width: 90vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .container {
+    height: auto;
+    width: 100vw;
+    margin-bottom: 15px;
+  }
+  .socials_footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .footer_logo {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+  }
+  .footer_text {
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer_view_more {
+    text-align: center;
+    display: flex;
+    border: 1px solid black;
+    padding: 14px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 200px;
+    justify-content: center;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .app {
+    padding: 5px;
+    margin: 8px;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .body {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    padding-top: 128px;
+    position: relative;
+    left: 0;
+    top: 100px;
+  }
+}
