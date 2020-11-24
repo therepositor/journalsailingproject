@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>itunes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f253bdd862.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="previous-play-next">
+        <button class="previous"><i class="fas fa-backward"></i></button>
+        <button class="play"><i class="fa fa-play"></i></button>
+        <button class="next"><i class="fas fa-forward"></i></button>
+      </div>
+      <div id="player">
+        <!-- <i class="fa fa-volume-down"></i> -->
+        <div id="volume"></div>
+        <!-- <i class="fa fa-volume-up"></i> -->
+      </div>
+      <div class="album-art">
+        <img src="twoblur.jpg" alt="Gauntlet" />
+      </div>
+      <div class="timestamp-control-shuffle-repeat">
+        <div class="shuffle-song-info-repeat">
+          <div class="shuffle"><i class="fas fa-random"></i></div>
+          <div class="song-info">artist name</div>
+          <div class="repeat"><i class="fa fa-retweet"></i></div>
+        </div>
+        <div class="time-running-song-title-time-elapse">
+          <div class="time-running">0:00</div>
+          <div class="song-title">song title</div>
+          <div class="elapse-time">3:56</div>
+        </div>
+        <div class="progress-bar"><div class="bar"></div></div>
+      </div>
+      <div class="list-more"><i class="fas fa-list"></i></div>
+      <div class="search">
+        <form action="/action_page.php">
+          <label for="song"></label>
+          <input type="text" id="song" />
+        </form>
+      </div>
+      <div class="minimize-maximize-close">
+        <button class="minimize"><i class="fa fa-window-minimize"></i></button>
+        <button class="maximize"><i class="fa fa-window-maximize"></i></button>
+        <button class="close"><i class="fa fa-close"></i></button>
+      </div>
+    </nav>
+    <div class="menu-bar">
+      <div class="menu-bar-item">File</div>
+      <div class="menu-bar-item">Edit</div>
+      <div class="menu-bar-item">Song</div>
+      <div class="menu-bar-item">View</div>
+      <div class="menu-bar-item">Controls</div>
+      <div class="menu-bar-item">Account</div>
+      <div class="menu-bar-item">Help</div>
+    </div>
+    <div class="options-bar">
+      <div class="previous-next">
+        <div class="next"><i class="fas fa-angle-left"></i></div>
+        <div class="previous"><i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="media-dropdown">
+        <div class="music-icon"><i class="fa fa-music"></i></div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Music</button>
+          <i class="fas fa-angle-down"></i>
+          <div class="dropdown-content">
+            <a href="#"><i class="fa fa-music">Music</i></a>
+            <a href="#"><i class="fas fa-film">Movie</i></a>
+            <a href="#"><i class="fas fa-tv">TV Shows</i></a>
+            <a href="#"><i class="fa fa-podcast">Podcasts</i></a>
+            <a href="#"><i class="fas fa-book-reader">Audiobooks</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="applemusic-options">
+        <a href="#" class="applemusic-options-items">Library</a>
+        <a href="#" class="applemusic-options-items">For You</a>
+        <a href="#" class="applemusic-options-items">Browse</a>
+        <a href="#" class="applemusic-options-items">Radio</a>
+        <a href="#" class="applemusic-options-items">Store</a>
+      </div>
+    </div>
+    <div class="sidebar-navigation">
+      <div class="library" id="library">
+        <div class="display-edit-done-close">
+          <div class="lib">
+            <h6>Library</h6>
+          </div>
+          <div class="closeshow" id="close"><i class="fa fa-close"></i></div>
+          <div class="show" id="show">
+            <h6 data-element="3">Edit</h6>
+          </div>
+        </div>
+
+        <a href="#" class="library-options recently-added"
+          ><i class="fa fa-calendar"></i>Recently Added</a
+        >
+        <a href="#" class="library-options artist"
+          ><i class="fas fa-street-view"></i>Artist</a
+        >
+        <a href="#" class="library-options albums"
+          ><i class="fas fa-record-vinyl"></i>Albums</a
+        >
+        <a href="#" class="library-options songs"
+          ><i class="fas fa-music"></i>Songs</a
+        >
+        <a href="#" class="library-options genres"
+          ><i class="fa fa-guitar"></i>Genres</a
+        >
+        <a href="#" class="library-options downloaded"
+          ><i class="fas fa-arrow-alt-circle-down"></i>Downloaded</a
+        >
+        <a href="#" class="library-options composers"
+          ><i class="fas fa-keyboard"></i>Composers</a
+        >
+        <a href="#" class="library-options compilations"
+          ><i class="fas fa-users"></i>Compilations</a
+        >
+        <a href="#" class="library-options tv-movies"
+          ><i class="fa fa-tv"></i>TV & Movies</a
+        >
+        <a href="#" class="library-options music-videos"
+          ><i class="fas fa-tv"></i>Music Videos</a
+        >
+        <a href="#" class="library-options internet-radio"
+          ><i class="fas fa-broadcast-tower"></i>Internet Radio</a
+        >
+        <form id="checkbox" class="library-forms-ondisplay">
+          <input
+            type="checkbox"
+            data-class="Recently Added"
+            id="Recently Added"
+            checked
+          />
+          <label for="Recently Added"
+            ><a href="#" class="library-options"
+              ><i class="fa fa-calendar"></i>Recently Added</a
+            ></label
+          ><br />
+          <input type="checkbox" data-class="Artist" id="Artist" checked />
+          <label for="Artist"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-street-view"></i>Artist</a
+            ></label
+          ><br />
+          <input type="checkbox" data-class="Albums" id="Albums" checked />
+          <label for="Albums"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-record-vinyl"></i>Albums</a
+            ></label
+          ><br />
+          <input type="checkbox" data-class="Genre" id="Genre" checked />
+          <label for="Genre"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-guitar"></i>Genre</a
+            ></label
+          ><br />
+          <input type="checkbox" data-class="Songs" id="Songs" checked />
+          <label for="Songs"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-music"></i>Songs</a
+            ></label
+          ><br />
+          <input
+            type="checkbox"
+            data-class="Downloaded"
+            id="Downloaded"
+            checked
+          />
+          <label for="Downloaded"
+            ><a href="#" class="library-options"
+              ><i class="fa fa-arrow-alt-circle-down"></i>Downloaded</a
+            ></label
+          ><br />
+          <input type="checkbox" data-class="Composers" id="Composers" />
+          <label for="Composers"
+            ><a href="#" class="library-options"
+              ><i class="fa fa-keyboard"></i>Composers</a
+            ></label
+          ><br />
+          <input type="checkbox" data-class="Compilations" id="Compilations" />
+          <label for="Compilations"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-users"></i>Compilations</a
+            ></label
+          ><br />
+          <input type="checkbox" id="TV & Movies" data-class="TV & Movies" />
+          <label for="TV & Movies"
+            ><a href="#" class="library-options"
+              ><i class="fa fa-tv"></i>TV & Movies</a
+            ></label
+          ><br />
+          <input type="checkbox" id="Music Videos" data-class="Music Videos" />
+          <label for="Music Videos"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-tv"></i>Music Videos</a
+            ></label
+          ><br />
+          <input
+            type="checkbox"
+            id="Internet Radio"
+            data-class="Internet Radio"
+          />
+          <label for="Internet Radio"
+            ><a href="#" class="library-options"
+              ><i class="fas fa-broadcast-tower"></i>Internet Radio</a
+            ></label
+          ><br />
+        </form>
+      </div>
+
+      <div class="music-playlists" id="music-playlists">
+        <div class="music-playlist">
+          <h6>Music Playlists</h6>
+          <i class="fa fa-angle-down"></i>
+          <div class="hide"><h6>Hide</h6></div>
+        </div>
+        <div class="music-playlists-items">
+          <a href="#"><i class="fa fa-atom"></i>Genius</a>
+          <a href="#"><i class="fas fa-headphones"></i>Good News</a>
+          <a href="#"><i class="fas fa-headphones"></i>Knacks</a>
+        </div>
+      </div>
+    </div>
+    <div class="music-list">
+      <div class="empty-space"></div>
+      <div class="name">Name</div>
+      <div class="cloud"><i class="fa fa-cloud"></i></div>
+      <div class="time">Time</div>
+      <div class="artist">Artist</div>
+      <div class="album">Album</div>
+      <div class="genre">Genre</div>
+      <div class="heart"><i class="fa fa-heart"></i></div>
+      <div class="plays">Plays</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bottom Navigation</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f253bdd862.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="mbsc-group-form">
+      <div class="mbsc-group-form-title">
+        <h3>SHOW MORE</h3>
+      </div>
+      <div class="mbsc-cloak" id="demo-show-more">
+        <div class="newspaper">
+          <a href="#"
+            ><i class="fa fa-newspaper"></i><a href="#" alt="News">News</a></a
+          >
+        </div>
+        <div class="users">
+          <a href="#"
+            ><i class="fa fa-users"></i><a href="#" alt="People">People</a></a
+          >
+        </div>
+        <div class="comment">
+          <i class="fa fa-comment"></i><a href="#" alt="Messages">Messages</a>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-button">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="globe">
+              <a href="#">
+                <i class="fa fa-globe"></i
+                ><a href="#" alt="Notifications">Notifications</a></a
+              >
+            </div>
+            <div class="calendar">
+              <a href="#"
+                ><i class="far fa-calendar-plus"></i
+                ><a href="#" alt="Events">Calendar</a></a
+              >
+            </div>
+            <div class="camera">
+              <a href="#"
+                ><i class="fas fa-camera-retro"></i
+                ><a href="#" alt="Your story">Your story</a></a
+              >
+            </div>
+            <div class="line-settings">
+              <a href="#"
+                ><i class="fas fa-cog"></i
+                ><a href="#" alt="Preferences">Preferences</a></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mbsc-group-form">
+      <div class="mbsc-group-form-title"><h3>ICON ONLY</h3></div>
+      <div class="mbsc-cloak" id="demo-icon-text">
+        <a href="#" class="newspaper"><i class="fa fa-newspaper"></i></a>
+        <a href="#" class="users"><i class="fa fa-users"></i></a>
+        <a href="#" class="comment"><i class="fa fa-comment"></i></a>
+        <a href="#" class="globe"><i class="fa fa-globe"></i></a>
+      </div>
+    </div>
+    <div class="mbsc-group-form">
+      <div class="mbsc-group-form-title"><h3>ICON AND LABEL</h3></div>
+      <div class="mbsc-cloak" id="demo-icon-text">
+        <div class="newspaper">
+          <i class="fa fa-newspaper"></i><a href="#" alt="News">News</a>
+        </div>
+        <div class="users">
+          <i class="fa fa-users"></i><a href="#" alt="People">People</a>
+        </div>
+        <div class="comment">
+          <i class="fa fa-comment"></i><a href="#" alt="Messages">Messages</a>
+        </div>
+        <div class="globe">
+          <i class="fa fa-globe"></i
+          ><a href="#" alt="Notifications">Notifications</a>
+        </div>
+      </div>
+    </div>
+    <div class="mbsc-group-form">
+      <div class="mbsc-group-form-title">
+        <h3>ICON AND LABEL WITH BADGE</h3>
+      </div>
+      <div class="mbsc-cloak" id="demo-badge">
+        <div class="newspaper">
+          <i class="fa fa-newspaper"></i><a href="#" alt="News">News</a>
+        </div>
+        <div class="users">
+          <i class="fa fa-users"></i><a href="#" alt="People">People</a>
+        </div>
+        <div class="comment" id="badge">
+          <i class="fa fa-comment"><span class="badge">3</span></i
+          ><a href="#" alt="Messages">Messages</a>
+        </div>
+        <div class="globe" id="badge">
+          <i class="fa fa-globe"><span class="badge">100</span></i
+          ><a href="#" alt="Notifications">Notifications</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mbsc-group-form-title"></div>
+    <div class="sidebar">Hamburger menu links go here</div>
+    <div class="main-content">
+      <button class="hamburger-menu-icon" onClick="toggleSidebar()">
+        click
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

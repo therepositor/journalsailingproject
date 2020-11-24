@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display" id="display"></div>
+      <div class="calculator_keys">
+        <div id="memory">
+          <button class="memory">mc</button>
+          <button class="memory">m+</button>
+          <button class="memory">m-</button>
+          <button class="memory">mr</button>
+        </div>
+        <div id="operators">
+          <button class="clear" id="clearAll" data-action="clear">C</button>
+          <button class="operator" id="dividedBy" data-action="divide">
+            /
+          </button>
+          <button class="operator" id="multiplyBy" data-action="multiply">
+            &times;
+          </button>
+          <button id="delete" class="delete" data-action="delete">&lt;</button>
+        </div>
+        <div id="seven-nine">
+          <button class="numbers" id="seven">7</button>
+          <button class="numbers" id="eight">8</button>
+          <button class="numbers" id="nine">9</button>
+          <button class="operator" id="minus" data-action="subtract">-</button>
+        </div>
+        <div id="four-six">
+          <button class="numbers" id="four">4</button>
+          <button class="numbers" id="five">5</button>
+          <button class="numbers" id="six">6</button>
+          <button class="operator" id="plus" data-action="add">+</button>
+        </div>
+        <div id="one-equalto">
+          <div id="one-point">
+            <div id="one-three">
+              <button class="numbers" id="one">1</button>
+              <button class="numbers" id="two">2</button>
+              <button class="numbers" id="three">3</button>
+            </div>
+            <div id="percentile-point">
+              <button
+                class="percentile"
+                id="percentile"
+                data-action="percentile"
+              >
+                %
+              </button>
+              <button class="numbers" id="zero">0</button>
+              <button class="numbers" id="point" data-action="decimal">
+                .
+              </button>
+            </div>
+          </div>
+          <button class="equalto" id="equalto" data-action="calculate">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

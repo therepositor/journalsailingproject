@@ -1,0 +1,187 @@
+/* Arbitrary CSS variable values for explanatory purposes */
+/*:root {
+  --sidebar-width: 100px;
+  --sidebar-bg-colour: blue;
+}
+.sidebar {
+  display: none;
+  position: relative;
+  width: var(--sidebar-width);
+}
+@media (max-width: 767px) {
+  html.sidebar-is-open .sidebar {
+    display: block; /*       The sidebar is just rendered in default position,      as it appears in the document flow     
+  }
+  html.sidebar-is-open .main-content {
+    position: fixed; /*      It is the main content that is positioned.      This is the crux of the implementation. The rest is all sugar.     Cons: /the body will scroll to the top, losing your user's scroll position    */ /* prevents resizing from its original full-screen width 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+   /* Optional enhancement:      make the over-scroll on iPhone the same color as the sidebar 
+  html.sidebar-is-open body {
+    background-color: var(--sidebar-bg-colour);
+  }
+  .sidebar {
+    background-color: var(--sidebar-bg-colour);
+  }
+}*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1rem;
+}
+.mbsc-group-form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+}
+ul li {
+  list-style: none;
+}
+.mbsc-group-form-title {
+  background-color: gray;
+  width: auto;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+}
+.mbsc-cloak {
+  justify-content: space-around;
+  width: auto;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+}
+.mbsc-cloak a i {
+  justify-content: space-evenly;
+  width: auto;
+  font-size: 40px;
+}
+.mbsc-cloak a:hover {
+  cursor: pointer;
+}
+.newspaper i {
+  font-size: 40px;
+}
+.comment i {
+  font-size: 40px;
+}
+.users i {
+  font-size: 40px;
+}
+.globe i {
+  font-size: 40px;
+}
+.calendar i {
+  font-size: 40px;
+}
+.camera i {
+  font-size: 40px;
+}
+.line-settings i {
+  font-size: 40px;
+}
+.mbsc-cloak a {
+  font-size: 10px;
+  text-decoration: none;
+}
+.newspaper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.globe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.camera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#badge {
+  position: relative;
+}
+
+#badge:hover {
+  background: white;
+}
+
+#badge .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 10px;
+}
+.dropdown-button i {
+  font-size: 40px;
+}
+.dropdown .dropdown-button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}

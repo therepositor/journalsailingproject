@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullscreen Navigation Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f253bdd862.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav id="nav-menu">
+      <div class="nav-menu" id="download">Downloaded</div>
+      <div class="nav-menu" id="all">All</div>
+      <div class="nav-menu" id="externalStorage">External storage</div>
+      <div class="nav-menu" id="running">Running</div>
+      <div class="nav-menu" id="disabled">Disabled</div>
+    </nav>
+    <div class="wrapper views" id="downloaded">
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-youtube"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Youtube</div>
+            <div class="appSize">26.47MB</div>
+          </div>
+          <div class="appDate">16/10/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-calendar"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Calendar</div>
+            <div class="appSize">26.71MB</div>
+          </div>
+          <div class="appDate">19/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-camera-retro"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Camera</div>
+            <div class="appSize">43.11MB</div>
+          </div>
+          <div class="appDate">10/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-folder"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">File Manager</div>
+            <div class="appSize">12.66MB</div>
+          </div>
+          <div class="appDate">9/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-globe-africa"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Maps</div>
+            <div class="appSize">46.21MB</div>
+          </div>
+          <div class="appDate">21/10/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">News</div>
+            <div class="appSize">24.00MB</div>
+          </div>
+          <div class="appDate">20/11/2014</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-all views">
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-globe"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Browser</div>
+            <div class="appSize">74.88MB</div>
+          </div>
+          <div class="appDate">18/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-calendar"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Calendar</div>
+            <div class="appSize">26.71MB</div>
+          </div>
+          <div class="appDate">17/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-camera-retro"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Camera</div>
+            <div class="appSize">43.11MB</div>
+          </div>
+          <div class="appDate">19/10/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-clock"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Clock</div>
+            <div class="appSize">1.52MB</div>
+          </div>
+          <div class="appDate">10/10/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fas fa-user-tie"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Contacts</div>
+            <div class="appSize">5.43MB</div>
+          </div>
+          <div class="appDate">11/08/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-copy"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Docs</div>
+            <div class="appSize">32.41MB</div>
+          </div>
+          <div class="appDate">19/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-folder"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">File Manager</div>
+            <div class="appSize">12.66MB</div>
+          </div>
+          <div class="appDate">18/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-image"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Gallery</div>
+            <div class="appSize">1.68MB</div>
+          </div>
+          <div class="appDate">17/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-globe-africa"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Maps</div>
+            <div class="appSize">46.21MB</div>
+          </div>
+          <div class="appDate">18/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-phone-alt"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Phone</div>
+            <div class="appSize">1.28MB</div>
+          </div>
+          <div class="appDate">19/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fas fa-envelope"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Email</div>
+            <div class="appSize">6.56MB</div>
+          </div>
+          <div class="appDate">05/07/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-comment"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Messages</div>
+            <div class="appSize">25.57MB</div>
+          </div>
+          <div class="appDate">06/06/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">News</div>
+            <div class="appSize">24.00MB</div>
+          </div>
+          <div class="appDate">20/10/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-youtube"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Youtube</div>
+            <div class="appSize">26.47MB</div>
+          </div>
+          <div class="appDate">19/11/2014</div>
+        </div>
+      </div>
+    </div>
+    <div class="views wrapper-externalStorage">
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-calendar"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Calendar</div>
+            <div class="appSize">26.71MB</div>
+          </div>
+          <div class="appDate">09/09/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">News</div>
+            <div class="appSize">24.00MB</div>
+          </div>
+          <div class="appDate">17/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-youtube"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Youtube</div>
+            <div class="appSize">26.47MB</div>
+          </div>
+          <div class="appDate">16/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-globe-africa"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Maps</div>
+            <div class="appSize">46.21MB</div>
+          </div>
+          <div class="appDate">19/08/2014</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-running views">
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-calendar"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Clock</div>
+            <div class="appSize">1.52MB</div>
+          </div>
+          <div class="appDate">16/10/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-folder"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">File Manager</div>
+            <div class="appSize">12.66MB</div>
+          </div>
+          <div class="appDate">10/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-comment"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Messages</div>
+            <div class="appSize">25.57MB</div>
+          </div>
+          <div class="appDate">09/11/2014</div>
+        </div>
+      </div>
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">News</div>
+            <div class="appSize">24.00MB</div>
+          </div>
+          <div class="appDate">08/11/2014</div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-disabled views">
+      <div class="sub-wrapper">
+        <div class="app-icon"><i class="fa fa-user-tie"></i></div>
+        <div class="app-spec">
+          <div class="appName-size">
+            <div class="appName">Contacts</div>
+            <div class="appSize">26.71MB</div>
+          </div>
+          <div class="appDate">17/11/2014</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="wrapper" id="wrapper">
+      <div class="open-downloaded" id="open-downloaded">
+        <div class="side-bar" id="side-bar">
+          <div class="app-icons" id="app-list">
+            <div class="app-icon"><i class="fa fa-calendar"></i></div>
+            <div class="app-icon"><i class="fas fa-camera-retro"></i></div>
+            <div class="app-icon"><i class="fa fa-folder"></i></div>
+            <div class="app-icon"><i class="fas fa-globe-africa"></i></div>
+            <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+            <div class="app-icon"><i class="fa fa-youtube"></i></div>
+          </div>
+        </div>
+        <div class="app-list" id="app-list-downloaded">
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Calendar</div>
+              <div class="appSize">3.52mb</div>
+            </div>
+            <div class="app-date">23/03/2019</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Camera</div>
+              <div class="appSize">78.89mb</div>
+            </div>
+            <div class="app-date">12/02/2018</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">File Manager</div>
+              <div class="appSize">130.34mb</div>
+            </div>
+            <div class="app-date">30/03/2017</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Maps</div>
+              <div class="appSize">56mb</div>
+            </div>
+            <div class="app-date">05/05/2009</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">News</div>
+              <div class="appSize">03/04/2008</div>
+            </div>
+            <div class="app-date"></div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Youtube</div>
+              <div class="appSize">90mb</div>
+            </div>
+            <div class="app-date">06/07/2014</div>
+          </div>
+        </div>
+
+      <div class="open-all" id="open-all">
+        <div class="side-bar" id="side-bar">
+          <div class="app-icons" id="app-list">
+            <div class="app-icon"><i class="fa fa-globe"></i></div>
+            <div class="app-icon"><i class="fa fa-calendar"></i></div>
+            <div class="app-icon"><i class="fas fa-camera-retro"></i></div>
+            <div class="app-icon"><i class="fas fa-clock"></i></div>
+            <div class="app-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="app-icon"><i class="fas fa-copy"></i></div>
+            <div class="app-icon"><i class="fa fa-folder"></i></div>
+            <div class="app-icon"><i class="fas fa-image"></i></div>
+            <div class="app-icon"><i class="fas fa-globe-africa"></i></div>
+            <div class="app-icon"><i class="fas fa-phone-alt"></i></div>
+          </div>
+        </div>
+        <div class="app-list" id="app-list-downloaded">
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Browser</div>
+              <div class="appSize">3.52mb</div>
+            </div>
+            <div class="app-date">23/03/2019</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Calendar</div>
+              <div class="appSize">3.52mb</div>
+            </div>
+            <div class="app-date">23/03/2019</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Camera</div>
+              <div class="appSize">78.89mb</div>
+            </div>
+            <div class="app-date">12/02/2018</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Clock</div>
+              <div class="appSize">6mb</div>
+            </div>
+            <div class="app-date">05/05/2009</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+                <div class="appName">Contact</div>
+                <div class="appSize">26.71mb</div>
+            </div>
+            <div class="app-date">14/11/2009</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Docs</div>
+              <div class="appSize">4mb</div>
+            </div>
+            <div class="app-date">02/03/2010</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">File Manager</div>
+              <div class="appSize">130.34mb</div>
+            </div>
+            <div class="app-date">30/03/2014</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+                <div class="appName">Gallery</div>
+                <div class="appSize">90mb</div>
+            </div>
+            <div class="app-date">06/07/2014</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+                <div class="appName">Maps</div>
+                <div class="appSize">9mb</div>
+            </div>
+            <div class="app-date">06/06/2014</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+                <div class="appName">Phone</div>
+                <div class="appSize">2mb</div>
+            </div>
+            <div class="app-date">07/07/2014</div>
+           </div>
+        </div>    
+      <div class="open-external-storage" id="open-external-storage">
+        <div class="side-bar" id="side-bar">
+          <div class="app-icons" id="app-list">
+            <div class="app-icon"><i class="fa fa-calendar"></i></div>
+            <div class="app-icon"><i class="fas fa-globe-africa"></i></div>
+            <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+            <div class="app-icon"><i class="fa fa-youtube"></i></div>  
+          </div>
+        </div>
+        <div class="app-list" id="app-list-downloaded">
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Calendar</div>
+              <div class="appSize">3.52mb</div>
+            </div>
+            <div class="app-date">23/03/2019</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Maps</div>
+              <div class="appSize">56mb</div>
+            </div>
+            <div class="app-date">05/05/2009</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">News</div>
+              <div class="appSize">03/04/2008</div>
+            </div>
+            <div class="app-date"></div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Youtube</div>
+              <div class="appSize">90mb</div>
+            </div>
+            <div class="app-date">06/07/2014</div>
+          </div>
+        </div>
+      </div>
+      <div class="open-running" id="open-running">
+        <div class="side-bar" id="side-bar">
+          <div class="app-icons" id="app-list">            
+            <div class="app-icon"><i class="fas fa-clock"></i></div>
+            <div class="app-icon"><i class="fa fa-folder"></i></div>
+            <div class="app-icon"><i class="fa fa-comment"></i></div>
+            <div class="app-icon"><i class="fa fa-newspaper"></i></div>
+          </div>
+        </div>
+        <div class="app-list" id="app-list-downloaded">
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Clock</div>
+              <div class="appSize">3.52mb</div>
+            </div>
+            <div class="app-date">23/03/2019</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">File Manager</div>
+              <div class="appSize">78.89mb</div>
+            </div>
+            <div class="app-date">12/02/2018</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">Messages</div>
+              <div class="appSize">130.34mb</div>
+            </div>
+            <div class="app-date">30/03/2017</div>
+          </div>
+          <div class="app-spec">
+            <div class="appName-size">
+              <div class="appName">News</div>
+              <div class="appSize">56mb</div>
+            </div>
+            <div class="app-date">05/05/2009</div>
+          </div>
+      <div class="open-disabled" id="open-disabled">
+        <div class="side-bar" id="side-bar">
+          <div class="app-icons" id="app-list">
+            <div class="app-icon"><i class="fas fa-user-tie"></i></div>
+          </div>
+        </div>
+        <div class="app-list" id="app-list-downloaded">
+        <div class="app-spec">
+            <div class="appName-size">
+                <div class="appName">Contact</div>
+                <div class="appSize">26.71mb</div>
+            </div>
+            <div class="app-date">14/11/2009</div>
+        </div>
+        </div>
+      </div>
+    </div>-->
+    <script src="javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  justify-content: space-between;
+  display: flex;
+  background: black;
+  color: white;
+}
+nav .hamburger-menu {
+  display: flex;
+  list-style: none;
+}
+nav .hamburger-menu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+nav.hamburger-menu li a:hover {
+  background: rgb(255, 94, 0);
+}
+nav .open-menu {
+  font-size: 2rem;
+  display: none;
+  margin: 20px;
+  cursor: pointer;
+}
+nav .hamburger-menu .close-menu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+nav .menu-logo {
+  cursor: pointer;
+  margin: 6px;
+  font-size: 25px;
+  align-self: center;
+}
+@media (max-width: 767px) {
+  nav .hamburger-menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .hamburger-menu .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .open-menu {
+    display: block;
+  }
+  nav .hamburger-menu li a:hover {
+    background: none;
+    color: rgb(255, 94, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}

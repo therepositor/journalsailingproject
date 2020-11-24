@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0 10px;
+}
+.header {
+  justify-content: space-between;
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 15px 0 15px;
+  box-shadow: 2px 10px;
+  width: calc(100% - 30px);
+  align-items: center;
+  background-color: seashell;
+}
+.menulist {
+  display: none;
+  width: 65%;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  font-size: large;
+}
+.logo {
+  display: block;
+  width: 180px;
+  height: 100px;
+}
+#ham {
+  display: block;
+  width: 30px;
+  height: 8px;
+  background-color: black;
+  margin: 4px;
+}
+.icon {
+  align-content: center;
+}
+.dropdownfreequote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  display: none;
+}
+.cover_text {
+  margin-top: 120px;
+}
+.text {
+  height: 400px;
+
+  width: 100%;
+  font-size: 66px;
+  font-weight: 300;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.video {
+  height: 367px;
+}
+video {
+  height: 100%;
+  width: 100%;
+}
+.solar_logo_text_link {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+}
+.class1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+p {
+  font-size: 16px;
+}
+.classlink {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 66px;
+  background-color: black;
+  color: white;
+  margin: 4px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 40px;
+  height: 56px;
+  align-items: center;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+.center {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.energy_logo_text_link {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+}
+.charger_logo_text_link {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+}
+.battery_logo_text_link {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+}
+.app_logo_text_link {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+}
+.freequote_wrapper {
+  height: 400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  border-top: 2px solid black;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+a {
+  text-decoration: none;
+}
+.text p {
+  font-size: 54px;
+}
+.powertextquote {
+  font-size: 20px;
+  font-weight: 500;
+}
+.freequote_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 4px;
+  padding: 7px;
+  border-radius: 66px;
+  background-color: black;
+  color: white;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: aliceblue;
+}
+.footer_content_options {
+  display: flex;
+  flex-direction: row;
+}
+.footer_download_apps {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  height: 56px;
+  justify-content: center;
+  margin: 10px;
+}
+.classlinkapp a {
+  font-size: 40px;
+  text-decoration: none;
+  padding: 41px;
+  border-radius: 66px;
+  background-color: white;
+  color: black;
+  margin: 30px;
+  border: 1px solid white;
+  margin: 15px;
+}
+.footer_accounts {
+  margin: 10px;
+}
+.footer_options {
+  margin: 10px;
+}
+.footer_content {
+  margin: 10px;
+}
+.footer_content div {
+  margin: 5px;
+}
+.footer_options div {
+  margin: 5px;
+}
+.footer_accounts div {
+  margin: 5px;
+}
+.footer_languages {
+  margin: 10px;
+}
+.footer_languages div {
+  margin: 5px;
+}
+@media only screen and (min-width: 450px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 2px;
+  background-color: lightcyan;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 40px;
+  background-color: darkcyan;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+nav .nav-menu:active {
+  color: skyblue;
+}
+nav .nav-menu:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  left: 0;
+}
+.wrapper-all,
+.wrapper-externalStorage,
+.wrapper-running,
+.wrapper-disabled {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  left: 0;
+}
+.app-spec {
+  width: 65px;
+  display: flex;
+}
+.appDate,
+.appSize {
+  font-size: 10px;
+}
+.wrapper .sub-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+  height: 60px;
+}
+.wrapper-all .sub-wrapper,
+.wrapper-disabled .sub-wrapper,
+.wrapper-externalStorage .sub-wrapper,
+.wrapper-running .sub-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+  height: 60px;
+}
+.sub-wrapper .app-spec {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.app-icon {
+  align-self: center;
+}
+.appName-size {
+  align-self: center;
+}
+.appDate {
+  align-self: center;
+}

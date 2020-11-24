@@ -1,0 +1,728 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("sanju-m-gurung-KDfFvf9FIWo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.landing-page-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 100vw;
+  color: antiquewhite;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+nav .navbar-items {
+  display: flex;
+  height: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  transition: top 1s ease;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 10;
+  color: black;
+  color: slategray;
+  height: 100%;
+  width: 100%;
+}
+
+nav .navbar-items ul li {
+  height: max-content;
+  width: 100vw;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  list-style: none;
+}
+nav .navbar-items ul:last-child {
+  border-bottom: 1px solid black;
+}
+nav .logo-navlink .show {
+  transform: translateY(0vh);
+  display: block;
+}
+.landing-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  color: antiquewhite;
+  font-size: 40px;
+  align-self: center;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.landing-page-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo-navlink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+nav .logo {
+  padding-left: 10px;
+  font-size: 25px;
+  letter-spacing: 4.5px;
+}
+nav .nav-cart {
+  font-size: 14px;
+  position: absolute;
+  left: 130px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+.makers-wrapper {
+  display: none;
+  padding: 10px;
+}
+.search-input {
+  width: 100vw;
+  border: none;
+  height: 44.78px;
+}
+.form-search {
+  display: none;
+  padding: 10px;
+}
+.form-login {
+  display: none;
+  padding: 10px;
+  flex-direction: column;
+  height: 50vh;
+  overflow: scroll;
+  font-size: 12px;
+}
+.journal-wrapper {
+  display: none;
+  padding: 10px;
+}
+.cart {
+  display: none;
+  padding: 10px;
+}
+nav .hamburger {
+  padding-right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.shop-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  overflow: scroll;
+  border-right: 1px solid black;
+}
+.makers-wrapper {
+  display: none;
+  flex-direction: row;
+  height: 50vh;
+  overflow: scroll;
+  border-right: 1px solid black;
+}
+.shop-sub-wrappers1,
+.makers-sub-wrapper1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 5px;
+}
+.shop-sub-wrappers2,
+.makers-sub-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 5px;
+}
+.shop-space,
+.shop-shop,
+.shop-object,
+.makers-a,
+.makers-b,
+.makers-c,
+.makers-f,
+.makers-g,
+.makers-j,
+.makers-k,
+.makers-l,
+.makers-m,
+.makers-n,
+.makers-s,
+.makers-r,
+.makers-t,
+.makers-w {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.shop-shop-items,
+.shop-space-items,
+.shop-object-items,
+.makers-b-items,
+.makers-a-items,
+.makers-c-items,
+.makers-f-items,
+.makers-g-items,
+.makers-j-items,
+.makers-k-items,
+.makers-l-items,
+.makers-m-items,
+.makers-n-items,
+.makers-s-items,
+.makers-r-items,
+.makers-t-items,
+.makers-w-items {
+  display: block;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+.shop-object-items-cushions,
+.shop-object-items-towelling,
+.shop-object-items-books,
+.shop-object-items-rugs,
+.shop-object-items-lighting {
+  display: block;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+.text-heading-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 13.4px;
+}
+input {
+  width: 85vw;
+  margin: 8px 0;
+  align-self: center;
+  padding: 13px 0;
+  border: 1px solid black;
+  font-size: 12px;
+  height: 70px;
+}
+.login-button {
+  margin: 15px 0;
+}
+.forgot-password {
+  font-size: 10px;
+  margin: -8px 0 0 14px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:link {
+  color: slategray;
+}
+.signin,
+.new-user {
+  margin: 10px 13px;
+  letter-spacing: 2px;
+}
+.new-user p {
+  letter-spacing: initial;
+  margin: 13px 0px;
+  font-size: 11px;
+}
+.new-user button {
+  width: 85vw;
+  margin: 15px 0;
+  align-self: center;
+  padding: 13px 0;
+  border: 1px solid black;
+  font-size: 12px;
+  height: 40px;
+}
+.journal-sub-wrapper {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav .navbar-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  nav .logo {
+    font-size: 25px;
+    letter-spacing: 4.5px;
+  }
+  nav .navbar-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    border: none;
+  }
+  nav .navbar-items ul:last-child {
+    border-bottom: none;
+  }
+  nav .navbar-items ul li {
+    position: relative;
+    border: none;
+    width: auto;
+    justify-content: space-between;
+  }
+  nav .hamburger {
+    display: none;
+  }
+  .makers-wrapper {
+    display: none;
+    flex-direction: row;
+    height: 70vh;
+    width: 93vw;
+    position: absolute;
+    top: 50px;
+    left: -268px;
+    z-index: 10;
+    background: white;
+    color: slategray;
+    overflow: hidden;
+  }
+  .journal-wrapper {
+    display: none;
+    flex-direction: row;
+    height: 70vh;
+    width: 93vw;
+    position: absolute;
+    top: 50px;
+    left: -490px;
+    z-index: 10;
+    background: white;
+    color: slategray;
+    justify-content: space-evenly;
+  }
+  .form-login {
+    display: none;
+    flex-direction: row;
+    height: 70vh;
+    width: 93vw;
+    position: absolute;
+    top: 50px;
+    left: -591px;
+    z-index: 10;
+    background: white;
+    color: slategray;
+    overflow: hidden;
+  }
+  .shop-wrapper {
+    display: none;
+    flex-direction: row;
+    height: 70vh;
+    width: 93vw;
+    position: absolute;
+    top: 50px;
+    left: -182px;
+    z-index: 10;
+    background: white;
+    color: slategray;
+    overflow: hidden;
+  }
+  .shop-sub-wrappers1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    left: 180px;
+    top: 50px;
+  }
+  .shop-sub-wrappers2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 440px;
+    top: 50px;
+  }
+  .landing-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    color: antiquewhite;
+    font-size: 40px;
+    align-self: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .landing-page-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .search-input {
+    width: auto;
+    background: inherit;
+    border: none;
+    height: auto;
+    color: antiquewhite;
+    position: absolute;
+    left: 52%;
+    top: -50px;
+  }
+  .form-search {
+    display: none;
+    height: 70vh;
+    width: 93vw;
+    position: absolute;
+    top: 50px;
+    left: -475%;
+    z-index: 10;
+    background: white;
+    color: slategray;
+    overflow: hidden;
+  }
+  .form-login {
+    display: none;
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .journal-wrapper {
+    display: none;
+  }
+  .shop-space,
+  .shop-shop,
+  .shop-object {
+    display: flex;
+    flex-direction: column;
+    padding: 11px;
+  }
+  .makers-a,
+  .makers-b,
+  .makers-c,
+  .makers-f,
+  .makers-m,
+  .makers-n,
+  .makers-r {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+  }
+  .makers-w {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+    position: absolute;
+    left: 370px;
+    top: 0px;
+  }
+  .makers-t {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+    position: absolute;
+    left: 250px;
+    top: 165px;
+  }
+  .makers-s {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+    position: absolute;
+    left: 250px;
+    top: 0px;
+  }
+  .makers-g {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+  }
+  .makers-j {
+    position: absolute;
+    left: 200px;
+    top: 120px;
+  }
+  .makers-k {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+  }
+  .makers-l {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+  }
+  .shop-object-items,
+  .shop-shop-items,
+  .shop-space-items {
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .makers-b-items,
+  .makers-a-items,
+  .makers-c-items,
+  .makers-f-items,
+  .makers-g-items,
+  .makers-j-items,
+  .makers-k-items,
+  .makers-l-items,
+  .makers-m-items,
+  .makers-n-items,
+  .makers-s-items,
+  .makers-r-items,
+  .makers-t-items,
+  .makers-w-items {
+    display: block;
+    padding: 5px 0px;
+    font-size: 13px;
+  }
+  .shop-object-items-cushions {
+    position: absolute;
+    left: 146px;
+    top: 29px;
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .shop-object-items-towelling {
+    position: absolute;
+    left: 146px;
+    top: 90px;
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .shop-object-items-books {
+    position: absolute;
+    left: 146px;
+    top: 120px;
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .shop-object-items-rugs {
+    position: absolute;
+    left: 146px;
+    top: 150px;
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .shop-object-items-lighting {
+    position: absolute;
+    left: 146px;
+    top: 180px;
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+  }
+  .makers-sub-wrapper1 {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+  }
+  .makers-sub-wrapper2 {
+    position: absolute;
+    left: 600px;
+    top: 50px;
+  }
+  .text-heading-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 13.4px;
+  }
+  .landing-page-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #fname {
+    width: 270px;
+    height: 40px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid black;
+  }
+  #password {
+    width: 270px;
+    height: 40px;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid black;
+  }
+  input {
+    height: 40px;
+    padding: 0;
+    position: relative;
+    left: -19%;
+  }
+  .login-button {
+    width: 270px;
+    height: 40px;
+    margin: 0px 0px 20px 0px;
+    border: 1px solid black;
+  }
+  ul li .text-heading-icon i {
+    display: none;
+  }
+  ul li a {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  .nav-cart {
+    display: none;
+  }
+  nav .logo {
+    padding-left: 50px;
+    font-size: 30px;
+    letter-spacing: 4.5px;
+  }
+  .backdrop {
+    position: absolute;
+    z-index: 1;
+    width: 93%;
+    animation-name: slideDown;
+    animation-duration: 1500ms;
+    animation-timing-function: ease-out;
+    top: -71%;
+    left: 3.5%;
+    background: white;
+    height: 80vh;
+    visibility: hidden;
+  }
+  @keyframes slideDown {
+    0% {
+      top: -71%;
+    }
+    100% {
+      top: 85vh;
+    }
+  }
+  nav .navbar-items ul li:hover {
+    cursor: pointer;
+  }
+  .logo-navlink {
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+    position: relative;
+    top: 0;
+    left: 3%;
+    z-index: 10;
+  }
+  .signin {
+    font-size: 15px;
+    margin: 85px 85px 30px 85px;
+  }
+  .forgot-password {
+    margin: -17px 0px 0px 85px;
+    color: black;
+    font-size: 10px;
+  }
+  .new-user {
+    position: absolute;
+    left: 58%;
+    top: 85px;
+    letter-spacing: 2px;
+  }
+  .new-user p {
+    position: absolute;
+    letter-spacing: 0px;
+    margin: 30px 0px 0px 0px;
+    width: 250px;
+  }
+  .create-account {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    width: 270px;
+    height: 40px;
+    border: 1px solid black;
+  }
+  .journal-sub-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    width: 20vw;
+  }
+  .image {
+    width: 18vw;
+    height: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  .date {
+    font-size: 10px;
+    text-align: center;
+    margin: 5px;
+  }
+  .description {
+    font-size: 10px;
+    text-align: center;
+  }
+  .new-user button {
+    width: 270px;
+    margin: 15px 0;
+    align-self: center;
+    padding: 13px 0;
+    border: 1px solid black;
+    font-size: 12px;
+    height: 40px;
+  }
+  .cart {
+    display: flex;
+    padding: 10px;
+  }
+}

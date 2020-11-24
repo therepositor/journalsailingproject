@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+}
+main {
+  padding: 0px 18px;
+}
+nav {
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.options {
+  display: none;
+}
+.copy_text {
+  padding-top: 100px;
+}
+.copy_text h1 {
+  font-size: 60px;
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.copy_text2 {
+  padding: 30px;
+}
+.copy_text2 p {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.download_app {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.download_app a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 17px;
+}
+button {
+  margin: 10px;
+  border: 2px solid #473f40;
+  border-radius: 5px;
+  background-color: #ebd2c5;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+button i {
+  margin: 0px 10px;
+}
+.next_previous a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #473f40;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+.next_previous {
+  margin-top: 40px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.built_by {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  font-size: 23px;
+}
+.built_by a {
+  text-decoration: none;
+  color: inherit;
+}
+.built_by i {
+  font-size: 25px;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 35px;
+  margin-top: 30px;
+}
+.copyright {
+  margin-top: 30px;
+  justify-self: center;
+  margin: 30px;
+}
+.chatbot {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 45px;
+}
+i {
+  color: #473f40;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11px;
+    justify-content: space-between;
+  }
+  .socials {
+    margin-top: 0px;
+  }
+  .socials i {
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .options {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    font-size: 23px;
+    font-family: cursive;
+  }
+}
+.hamburger {
+  display: none;
+}
+footer {
+  justify-content: space-between;
+}
